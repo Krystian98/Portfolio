@@ -2,6 +2,9 @@
   "name": "portfoliodraft",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+  },
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "@sanity/client": "^2.10.5",
