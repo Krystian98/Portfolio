@@ -18,4 +18,17 @@
 .name-item {
   margin: 0;
   height: 40px;
+  font-size: xxx-large;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .name-item {
+    margin: 0;
+    height: 40px;
+    font-size: large;
+  }
 }

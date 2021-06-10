@@ -31,7 +31,7 @@ export default function Navbar() {
             to="/"
             exact
             activeClassName="text-gray-700"
-            className="inline-flex items-center py-0 px-5 mr-4 rounder text-6xl text-gray-500 font-thin hover:text-yellow-700 name-item"
+            className="inline-flex items-center py-0 px-5 mr-4 rounder text-gray-500 font-thin hover:text-yellow-700 name-item"
           >
             Krystian Damian Krawczyk
           </NavLink>

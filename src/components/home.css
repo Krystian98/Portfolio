@@ -43,9 +43,12 @@
   font-weight: lighter;
   margin-top: 3em;
   margin-left: 2em;
+
+  display: none;
 }
 
-.proj-text:hover {
+/* On hover on pic show proj.text */
+.proj-pic:hover ~ .proj-text {
   display: block;
 }
 
@@ -54,15 +57,18 @@
     width: 600px;
   }
   .proj-item {
-    width: 100%;
+    width: auto;
     margin-right: 0em;
     margin-bottom: 0em;
-    margin-left: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
   .proj-text {
     font-size: 200%;
     margin-top: 0.5em;
     margin-left: 0.5em;
+
+    display: block;
   }
   .proj-item-inner {
     display: flex;
