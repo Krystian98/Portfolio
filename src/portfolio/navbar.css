@@ -1,0 +1,20 @@
+/* Cascading Style Sheet */
+
+.nav-container {
+  display: flex;
+}
+
+.left-item {
+  margin-left: 6%;
+}
+
+.right-item {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.name-item {
+  margin: 0;
+  height: 40px;
+}

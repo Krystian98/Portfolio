@@ -1,11 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function About() {
+import "./navbar.css";
+
+export default function Navbar() {
   return (
     <header className="bg-gray-50">
-      <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+      {/* parent */}
+      <div className="nav-container">
+        {/* children */}
+        <div className="left-item">
           <NavLink
             to="work"
             activeClassName="text-gray-900 underline"
@@ -20,15 +24,18 @@ export default function About() {
           >
             About
           </NavLink>
+        </div>
+        {/* children */}
+        <div className="right-item">
           <NavLink
             to="/"
             exact
             activeClassName="text-gray-700"
-            className="align-self-flex-end py-3 px-5 ml-20 text-gray-400 hover:text-yellow-400 text-6xl font-thin tracking-wide"
+            className="inline-flex items-center py-0 px-5 mr-4 rounder text-6xl text-gray-500 font-thin hover:text-yellow-700 name-item"
           >
             Krystian Damian Krawczyk
           </NavLink>
-        </nav>
+        </div>
       </div>
     </header>
   );
