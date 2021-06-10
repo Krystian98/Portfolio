@@ -11,14 +11,14 @@ export default function Navbar() {
         {/* children */}
         <div className="left-item">
           <NavLink
-            to="work"
+            to="/work"
             activeClassName="text-gray-900 underline"
             className="inline-flex items-center py-3 px-0 mr-5 rounder text-xl text-gray-500 font-thin hover:text-yellow-700"
           >
             Works
           </NavLink>
           <NavLink
-            to="about"
+            to="/about"
             activeClassName="text-gray-900 underline"
             className="inline-flex items-center py-3 px-5 mr-4 rounder text-xl text-gray-500 font-thin hover:text-yellow-700"
           >

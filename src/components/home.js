@@ -1,27 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./home.css";
-
-import bofelleskap_pic from "../static/Interior-bofelleskap.jpeg";
-import complex_building from "../static/complex-building.jpeg";
-import hammock from "../static/Terrace-Interior-Hammock.jpeg";
+import data from "../static/data/projects";
 
 export default function Home() {
-  const proj = [
-    { id: 1, img: bofelleskap_pic, text: "Bofelleskap" },
-    { id: 2, img: complex_building, text: "Complex" },
-    { id: 3, img: hammock, text: "Coomplex2" },
-  ];
+  const proj = data.projects;
   return (
     <div className="home-container">
       {proj.map((p) => {
         return (
           <div className="proj-item">
-            <div className="proj-item-inner">
-              <img className="proj-pic" src={p.img} />
-
-              <div className="proj-text">{p.text}</div>
-            </div>
+            <Link
+              to={{ pathname: `/project/${p.text}`, state: p }}
+              exact
+              className="proj-link"
+            >
+              {/* display flex direction row */}
+              <div className="proj-item-inner">
+                {/* children - pic and text */}
+                <img className="proj-pic" src={p.img} />
+                <div className="proj-text">{p.text}</div>
+              </div>
+            </Link>
           </div>
         );
       })}
