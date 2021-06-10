@@ -15,7 +15,7 @@ export default function Navbar() {
             activeClassName="text-gray-900 underline"
             className="inline-flex items-center py-3 px-0 mr-5 rounder text-xl text-gray-500 font-thin hover:text-yellow-700"
           >
-            Work - load
+            Works
           </NavLink>
           <NavLink
             to="about"
@@ -31,7 +31,7 @@ export default function Navbar() {
             to="/"
             exact
             activeClassName="text-gray-700"
-            className="inline-flex items-center py-0 px-5 mr-4 rounder text-6xl text-gray-500 font-thin hover:text-yellow-700 name-item"
+            className="py-3 px-5 ml-20 text-gray-400 hover:text-yellow-400 text-6xl font-thin tracking-wide"
           >
             Krystian Damian Krawczyk
           </NavLink>
