@@ -7,7 +7,7 @@ import complex_building from "../static/complex-building.jpeg";
 import hammock from "../static/Terrace-Interior-Hammock.jpeg";
 
 export default function About() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState({});
 
   const proj = [
     { id: 1, img: bofelleskap_pic },
@@ -24,7 +24,7 @@ export default function About() {
                 className="proj-pic"
                 src={p.img}
                 onMouseEnter={() => setShow({ show: true, id: p.id })}
-                onMouseLeave={() => setShow(false)}
+                onMouseLeave={() => setShow({ show: false, id: p.id })}
               />
               {/* Show is true and id of element is the show element */}
               {show.show && p.id === show.id && "test"}
