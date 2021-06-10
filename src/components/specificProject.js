@@ -1,12 +1,20 @@
 import React from "react";
 
+import "./specificProject.css";
+
 const SpecificProject = (props) => {
-  const proj = props.location.state;
+  const p = props.location.state;
   return (
-    <div className="home-container">
-      <img className="proj-pic" src={proj.img} />
-      <h1> {proj.id} </h1>
-      <h1> {proj.text} </h1>
+    <div className="">
+      <div className="sp-container">
+        <h1> {p.text} </h1>
+      </div>
+      <div className="sp-container">
+        <img className="proj-pic" src={p.img} />
+        <div className="">
+          <span className="sp-detailed-text"> {p.detailed_text} </span>
+        </div>
+      </div>
     </div>
   );
 };

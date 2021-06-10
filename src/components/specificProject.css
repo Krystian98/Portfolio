@@ -1,0 +1,11 @@
+.sp-detailed-text {
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1em;
+}
+
+.sp-container {
+  display: flex;
+  justify-content: center;
+}
