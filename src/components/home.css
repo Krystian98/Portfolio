@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 4em;
 }
 
 .proj-item {
@@ -15,7 +16,7 @@
 }
 
 .proj-pic {
-  width: 80%;
+  width: 700px;
 
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -29,4 +30,42 @@
   -moz-filter: none;
   -ms-filter: none;
   filter: none;
+}
+
+.proj-item-inner {
+  display: flex;
+}
+
+.proj-text {
+  color: rgb(105, 105, 105);
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 250%;
+  font-weight: lighter;
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
+.proj-text:hover {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .proj-pic {
+    width: 600px;
+  }
+  .proj-item {
+    width: 100%;
+    margin-right: 0em;
+    margin-bottom: 0em;
+    margin-left: 1.5em;
+  }
+  .proj-text {
+    font-size: 200%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+  .proj-item-inner {
+    display: flex;
+    flex-direction: column;
+  }
 }

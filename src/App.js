@@ -3,6 +3,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import Work from "./components/work";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route component={About} path="/about" />
         <Route component={Work} path="/work" />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
