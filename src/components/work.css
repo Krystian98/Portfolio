@@ -1,0 +1,39 @@
+.work-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-proj {
+  /* decides how many per row */
+  width: 30%;
+  height: 500px;
+  margin: 1em;
+}
+
+.work-pic {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+.work-pic:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.work-text {
+  font-size: xx-large;
+  display: none;
+
+  margin-bottom: auto;
+}
+
+.work-pic:hover ~ .work-text {
+  display: block;
+}
